@@ -2,3 +2,42 @@
 
 /* paleta de cores */
 /* #001438, #020C20, #105490, #6E85AD, #3C6EA7 */
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main{
+    height: 100vh;
+    position: relative;
+    background-color: #6E85AD;
+}
+
+section{
+    height: 500px;
+    width: 300px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.466);
+}
+
+div#imagem{
+    background-image: url(../imagens/stars.jpg);
+    background-position: right top;
+    height: 50%;
+    border-radius: 20px 20px 0 0;
+}
+
+div#form{
+    height: 50%;
+}
+
+div#form > h1{
+    text-align: center;
+}
