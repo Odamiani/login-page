@@ -28,6 +28,7 @@ main{
     background-color: rgb(234, 234, 234);
     border-radius: 20px;
     box-shadow: 0 0 30px #001438ba;
+    transition: all 0.3s;
 }
 
 div#imagem{
@@ -147,6 +148,7 @@ span{
         display: flex;
         height: 45vh;
         width: 700px;
+        transition: width 0.3s;
     }
 
     div#imagem{
@@ -177,6 +179,7 @@ span{
         flex-direction: row-reverse;
         height: 45vh;
         width: 900px;
+        transition: width 0.3s;
     }
 
     div#imagem{

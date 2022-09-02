@@ -16,14 +16,14 @@
             <div id="form">
                 <h1>Login</h1>
                 <p>Seja bem-vindo(a) novamente. Faça login para acessar sua conta e poder fazer as configurações no seu ambiente.</p>
-                <form action="login.php" method="post">
+                <form action="login.php" method="post" autocomplete="on">
                     <div id="entrar">
                         <span class="material-symbols-outlined">person</span>
-                        <input type="text" name="user" id="user" placeholder="e-mail">
+                        <input type="email" name="user" id="user" placeholder="e-mail" required>
                     </div>
                     <div id="esq">
                         <span class="material-symbols-outlined">key</span>
-                        <input type="password" name="pass" id="pass" placeholder="senha">
+                        <input type="password" name="pass" id="pass" placeholder="senha" minlength="8" required>
                     </div>
                     <input type="submit" value="Entrar" id="button1">
                     <a href="#" id="esqueci">Esqueci a senha<span class="material-symbols-outlined">mail</span></a>
