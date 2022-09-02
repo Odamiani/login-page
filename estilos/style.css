@@ -67,11 +67,37 @@ div#form form{
 }
 
 #button1, #button2{
+    font-size: 1.1em;
+    cursor: pointer;
+    height: 35px;
+    padding: 5px;
     margin: 10px;
+}
+
+#button1{
+    border: 1px solid #001438;
+    background-color: #001438;
+    border-radius: 10px;
+    color: white;
+}
+
+#button2{
+    background-color: white;
+    border: 2px solid #001438;
+    border-radius: 10px;
+    color: #001438;
 }
 
 #user:focus, #pass:focus{
     background-color: white;
+}
+
+#button1:hover{
+    background-color: #3C6EA7;
+}
+
+#button2:hover{
+    border-color: #3C6EA7;
 }
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
@@ -97,5 +123,25 @@ div#form form{
 }
 
 @media screen and (min-width: 993px) {
+
+    section{
+        display: flex;
+        flex-direction: row-reverse;
+        height: 400px;
+        width: 900px;
+    }
+
+    div#imagem{
+        background-position: center top;
+        width: 35%;
+        height: 100%;
+        border-radius: 0 20px 20px 0;
+    }
+
+    div#form{
+        width: 65%;
+        height: 100%;
+    }
+
 
 }
