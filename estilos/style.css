@@ -64,25 +64,29 @@ div#form form{
 }
 
 div#entrar, div#esq{
-    padding: 2px;
+    display: flex;
+    margin: 5px;
+    min-height: 40px;
     border-radius: 10px;
-    background-color: #001438;
+    background-color: #105490;
     color: white;
+    align-items: center;
 }
 
 span{
     width: 10%;
-    
+    padding-left: 4px;
+    margin-right: 10px;
 }
 
 #user, #pass{
-    background-color: #3c6ea777;
+    background-color: #e859ed63;
     border: none;
     height: 35px;
-    width: 80%;
+    width: 85%;
     padding: 5px;
     border-radius: 5px;
-    margin: 10px;
+    outline: none;
 }
 
 #user::placeholder, #pass::placeholder{
@@ -106,10 +110,14 @@ span{
 }
 
 #esqueci{
-    background-color: white;
+    background-color: rgb(234, 234, 234);
     border: 2px solid #001438;
     border-radius: 10px;
     color: #001438;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #user:focus, #pass:focus{
@@ -124,8 +132,9 @@ span{
     background-color: #3C6EA7;
 }
 
-#button2:hover{
+#esqueci:hover{
     border-color: #3C6EA7;
+    color: #3C6EA7;
 }
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
