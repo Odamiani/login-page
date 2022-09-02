@@ -19,7 +19,7 @@ main{
 }
 
 #login{
-    height: 600px;
+    height: 85vh;
     width: 300px;
     position: absolute;
     top: 50%;
@@ -39,22 +39,22 @@ div#imagem{
 
 div#form{
     height: 60%;
-    padding: 15px;
+    padding: 2vh 15px;
 }
 
 div#form > h1{
     text-align: center;
-    font-size: 2em;
-    margin-bottom: 10px;
+    font-size: 5vh;
     font-weight: 900;
     color: #001438;
+    margin-bottom: 2vh;
 }
 
 div#form > p{
     color: #001438;
     font-weight: 500;
-    margin-bottom: 10px;
-    font-size: 0.9em;
+    font-size: 2vh;
+    margin-bottom: 2vh;
 }
 
 div#form form{
@@ -65,12 +65,12 @@ div#form form{
 
 div#entrar, div#esq{
     display: flex;
-    margin: 5px;
-    min-height: 40px;
+    height: 5.5vh;
     border-radius: 10px;
     background-color: #105490;
     color: white;
     align-items: center;
+    margin-bottom: 2vh;
 }
 
 span{
@@ -82,27 +82,27 @@ span{
 #user, #pass{
     background-color: #e859ed63;
     border: none;
-    height: 35px;
+    height: 4.7vh;
     width: 85%;
-    padding: 5px;
+    padding: 1vh 10px;
     border-radius: 5px;
     outline: none;
 }
 
 #user::placeholder, #pass::placeholder{
     color: white;
+    font-size: 2vh;
 }
 
 #button1, #esqueci{
-    font-size: 1.1em;
+    font-size: 2.5vh;
     cursor: pointer;
-    height: 35px;
-    padding: 5px;
-    margin: 10px;
+    height: 4.7vh;
+    padding: 1vh 5px;
+    margin-bottom: 2vh;
 }
 
 #button1{
-    padding-top: 8px;
     border: 1px solid #001438;
     background-color: #001438;
     border-radius: 10px;
@@ -139,9 +139,13 @@ span{
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
 
+    main{
+        background-image: linear-gradient(to bottom, #6E85AD, #020C20);
+    }
+
     #login{
         display: flex;
-        height: 300px;
+        height: 45vh;
         width: 700px;
     }
 
@@ -156,15 +160,22 @@ span{
         width: 65%;
         height: 100%;
     }
+    #user, #pass{
+        width: 87%;
+    }
     
 }
 
 @media screen and (min-width: 993px) {
 
+    main{
+        background-image: linear-gradient(to bottom, #6E85AD, #020C20);
+    }
+
     #login{
         display: flex;
         flex-direction: row-reverse;
-        height: 400px;
+        height: 45vh;
         width: 900px;
     }
 
@@ -180,5 +191,8 @@ span{
         height: 100%;
     }
 
+    #user, #pass{
+        width: 87.5%;
+    }
 
 }
