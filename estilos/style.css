@@ -7,6 +7,7 @@
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
 }
 
 main{
@@ -16,7 +17,7 @@ main{
 }
 
 section{
-    height: 500px;
+    height: 600px;
     width: 300px;
     position: absolute;
     top: 50%;
@@ -24,20 +25,77 @@ section{
     transform: translate(-50%, -50%);
     background-color: white;
     border-radius: 20px;
-    box-shadow: 0 0 30px rgba(0, 0, 0, 0.466);
+    box-shadow: 0 0 30px #001438ba;
 }
 
 div#imagem{
     background-image: url(../imagens/stars.jpg);
     background-position: right top;
-    height: 50%;
+    height: 40%;
     border-radius: 20px 20px 0 0;
 }
 
 div#form{
-    height: 50%;
+    height: 60%;
+    padding: 15px;
 }
 
 div#form > h1{
     text-align: center;
+    margin-bottom: 10px;
+    font-weight: 900;
+    color: #001438;
+}
+
+div#form > p{
+    margin-bottom: 10px;
+    font-size: 0.9em;
+}
+
+div#form form{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+#user, #pass{
+    background-color: #001eff3b;
+    height: 35px;
+    padding: 5px;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+#button1, #button2{
+    margin: 10px;
+}
+
+#user:focus, #pass:focus{
+    background-color: white;
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+
+    section{
+        display: flex;
+        height: 300px;
+        width: 700px;
+    }
+
+    div#imagem{
+        background-position: center top;
+        width: 35%;
+        height: 100%;
+        border-radius: 20px 0 0 20px;
+    }
+
+    div#form{
+        width: 65%;
+        height: 100%;
+    }
+    
+}
+
+@media screen and (min-width: 993px) {
+
 }
